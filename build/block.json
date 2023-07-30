@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/rotating-banner",
+  "version": "0.1.0",
+  "title": "Rotating Banner",
+  "category": "design",
+  "icon": "image-rotate",
+  "description": "Example block scaffolded with Create Block tool.",
+  "attributes": {
+    "rotateAngle": {
+      "type": "number",
+      "default": -1
+    },
+    "offSetShadowVertical": {
+      "type": "integer",
+      "default": 0
+    },
+    "offSetShadowHorizontal": {
+      "type": "integer",
+      "default": 0
+    },
+    "shadowBlur": {
+      "type": "integer",
+      "default": 0
+    },
+    "shadowColor": {
+      "type": "string",
+      "default": "#b8b8b8"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "text": "#ffffff",
+          "background": "#8a0cc4"
+        },
+        "spacing": {
+          "padding": {
+            "top": "5px",
+            "right": "5px",
+            "bottom": "5px",
+            "left": "5px"
+          },
+          "margin": {
+            "top": "5px",
+            "right": "5px",
+            "bottom": "5px",
+            "left": "5px"
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "__experimentalBorder": {
+      "radius": true
+    },
+    "html": true,
+    "typography": {
+      "fontFamilies": true,
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "color": {
+      "gradients": true,
+      "background": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "align": true
+  },
+  "textdomain": "rotating-banner",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
